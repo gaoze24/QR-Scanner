@@ -74,7 +74,7 @@ export function ResultPanel({
       />
 
       <div className="action-row">
-        <button type="button" className="btn btn-secondary" onClick={handleCopy} disabled={!canCopy}>
+        <button type="button" className="btn btn-copy" onClick={handleCopy} disabled={!canCopy}>
           {copied ? 'Copied' : 'Copy result'}
         </button>
 
@@ -84,7 +84,7 @@ export function ResultPanel({
           </button>
         )}
 
-        <button type="button" className="btn btn-ghost" onClick={onClear} disabled={!hasState}>
+        <button type="button" className="btn btn-clear" onClick={onClear} disabled={!hasState}>
           Clear
         </button>
       </div>
