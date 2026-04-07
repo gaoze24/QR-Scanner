@@ -47,6 +47,23 @@ npm run build
 npm run preview
 ```
 
+## Deploy to GitHub Pages
+
+This project includes a workflow at `.github/workflows/deploy-pages.yml`.
+
+1. Push the repository to GitHub.
+2. In GitHub, open Settings > Pages.
+3. Set Source to GitHub Actions.
+4. Push to `main` (or run the workflow manually from the Actions tab).
+5. Wait for Deploy to GitHub Pages workflow to complete.
+
+The Vite base path is configured automatically:
+
+- Project repo (example: `owner/QR-Scanner`) -> served at `/QR-Scanner/`
+- User/org pages repo (example: `owner/owner.github.io`) -> served at `/`
+
+If you still see a blank page after deployment, do a hard refresh once to clear cached assets.
+
 ## How to use
 
 1. Upload method:
