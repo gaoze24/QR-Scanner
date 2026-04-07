@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;600;700&display=swap');
+
+:root {
+  --canvas: #f6f0e4;
+  --ink: #1f2a37;
+  --ink-soft: #52616f;
+  --line: #e2d3bf;
+  --shell-shadow: 0 35px 80px -52px rgba(52, 34, 12, 0.55);
+
+  font-family: 'Sora', 'Avenir Next', 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--ink);
+  background: var(--canvas);
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 12% -15%, rgba(251, 191, 36, 0.35), transparent 52%),
+    radial-gradient(circle at 90% 20%, rgba(45, 212, 191, 0.22), transparent 48%),
+    var(--canvas);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
